@@ -1,12 +1,27 @@
 <img src="ultra.png" alt="ultra" width="200"/>
 
-# ultrawideband: p2p without the mitm
+# ultrawideband: native, mobile, p2p
 
-works with android and ios:
+a p2p demo with ios <=> android interop
 
+
+
+> [!WARNING]
+> simulators dont work, you need real hw
+
+
+to build on ios
+```bash
+open ultrawideband/uwb-ios/connections/swift/NearbyConnections/Example/p2px-ios.xcodeproj/project.xcworkspace
+```
+to build on android
+```
+cd ultrawideband/uwb-android &&  ./gradlew build
+```
+****
 > [!NOTE]  
-> google's nearby lib needs a flag compiled to get ios interop working</br>
->```nearby/connections/implementation/lags/nearby_connections_feature_flags.h```
+> google's nearby lib needs a flag set to get ios interop working</br>
+>```nearby/connections/implementation/flags/nearby_connections_feature_flags.h```
 
 ```cpp
 // Disable/Enable BLE v2 in Nearby Connections SDK.
