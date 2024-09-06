@@ -1,6 +1,6 @@
 <img src="ultra.png" alt="ultra" width="200"/>
 
-# mobile p2p using ultrawideband
+# ultrawideband: p2p without the mitm
 
 works with android and ios:
 
